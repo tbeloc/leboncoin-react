@@ -5,8 +5,8 @@ class Header extends React.Component {
   onLogOut = event => {
     this.props.logOut();
     this.props.history.push("/");
-    event.preventDefault();
   };
+  //Pourquoi ?
   renderNav() {
     if (this.props.user._id) {
       return (
@@ -22,7 +22,16 @@ class Header extends React.Component {
         </React.Fragment>
       );
     }
-    return <NavLink to="/sign_up">Créer un compte</NavLink>;
+    return (
+      <React.Fragment>
+        <li>
+          <NavLink to="/sign_up">Créer un compte</NavLink>
+        </li>
+        <li>
+          <NavLink to="/log_in">Se connecter</NavLink>
+        </li>
+      </React.Fragment>
+    );
   }
   render() {
     return (
