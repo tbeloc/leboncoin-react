@@ -1,0 +1,35 @@
+.containerOffer {
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+  border-bottom: 1px solid #f2f2f2;
+  border-left: 1px solid #f2f2f2;
+  border-right: 1px solid #f2f2f2;
+  background-color: #ffffff;
+}
+
+.containerFirstOffer {
+  border-top: 1px solid #f2f2f2;
+}
+
+.containerFoto {
+  background-color: #fafafa;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+.containerDesc {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #33669a;
+}
+
+.pPrice {
+  color: #e5733d;
+}
+
+.cssOffer {
+  text-decoration: none;
+}

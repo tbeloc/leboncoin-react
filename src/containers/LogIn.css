@@ -1,0 +1,166 @@
+main {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  margin-top: 20px;
+}
+
+.submit {
+  color: #fff !important;
+  text-transform: uppercase;
+  background: #e5733d;
+  padding: 20px;
+  /* border-radius: 5px; */
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  margin: 30px;
+}
+
+.submit:hover {
+  background: #434343;
+  letter-spacing: 1px;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+
+.connexion {
+  padding-top: 60px;
+  border-bottom: 1px solid #e5733d;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.middle {
+}
+
+.inp {
+  position: relative;
+  margin: auto;
+  width: 100%;
+  max-width: 280px;
+}
+.inp .label {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  font-size: 16px;
+  color: #9098a9;
+  font-weight: 500;
+  transform-origin: 0 0;
+  transition: all 0.2s ease;
+}
+.inp svg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 26px;
+  fill: none;
+}
+.inp svg path {
+  stroke: #c8ccd4;
+  stroke-width: 2;
+}
+.inp svg path d {
+  transition: all 0.2s ease;
+}
+.inp .border {
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  height: 2px;
+  right: 0;
+  background: #c8ccd4;
+}
+.inp input {
+  -webkit-appearance: none;
+  width: 100%;
+  border: 0;
+  font-family: inherit;
+  height: 48px;
+  font-size: 16px;
+  font-weight: 500;
+  background: none;
+  border-radius: 0;
+  color: #223254;
+  transition: all 0.15s ease;
+}
+.inp input:not(:placeholder-shown) + span {
+  color: #5a667f;
+  transform: translateY(-26px) scale(0.75);
+}
+.inp input:focus {
+  background: none;
+  outline: none;
+}
+.inp input:focus + span {
+  /* color: #07f; */
+  color: #d7784a;
+  transform: translateY(-26px) scale(0.75);
+  transition-delay: 0.1s;
+}
+.inp input:focus + span + svg path {
+  stroke: #d7784a;
+  /* stroke: #07f; */
+  animation: elasticInput 0.4s ease forwards;
+}
+.inp input:focus + span + svg + .border {
+  /* background: #07f; */
+  background: #d7784a;
+}
+.dribbble {
+  position: fixed;
+  right: 20px;
+  bottom: 15px;
+  transition: all 0.2s ease;
+}
+.dribbble span {
+  font-size: 28px;
+  color: #9098a9;
+}
+@-moz-keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}
+@-webkit-keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}
+@-o-keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}
+@keyframes elasticInput {
+  50% {
+    d: path("M2,2 C21,17 46,25 74,25 C102,25 118,25 120,25");
+  }
+}
+
+.test {
+  height: 30%;
+  width: 50%;
+  display: grid;
+  font-family: Avenir;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+#email {
+}
+/* body {
+}
+* {
+} */

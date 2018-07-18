@@ -1,0 +1,50 @@
+header {
+  display: flex;
+}
+
+img {
+  height: 25px;
+  padding: 20px;
+}
+
+.menu {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-right: white solid 1px;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+
+.button a:link,
+.button a {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button a:visited {
+  color: white;
+  text-decoration: none;
+}
+.button a:hover {
+  color: white;
+  text-decoration: none;
+}
+.button a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.buttonFirst {
+  border-left: white solid 1px;
+}
