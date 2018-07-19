@@ -9,7 +9,7 @@ class Home extends React.Component {
     offers: []
   };
 
-  getOffers = () => {
+  getOffers() {
     axios
       .get("https://leboncoin-api.herokuapp.com/api/offer")
       .then(response => {
@@ -18,9 +18,9 @@ class Home extends React.Component {
           offers: response.data
         });
       });
-  };
+  }
 
-  render() {
+  renderOffers() {
     let listOffer = [];
     let count = 0;
     let classArticle = "";
@@ -45,11 +45,14 @@ class Home extends React.Component {
       );
       count++;
     });
+    return listOffer;
+  }
 
+  render() {
     return (
       <React.Fragment>
         <main>
-          {listOffer}
+          {this.renderOffers()}
           {/* <Link to="/offer/1">Annonce 1</Link> */}
         </main>
       </React.Fragment>

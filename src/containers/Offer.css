@@ -1,15 +1,53 @@
 .mainOffer {
+  display: flex;
   width: 1200px;
   margin: 20px auto 0 auto;
-  border: 1px red solid;
 }
 
 .imgOffer {
   background-color: #d6d0d0;
-  width: 600px;
+  width: 700px;
   height: 400px;
 }
 
 .descOffer {
+  height: 100%;
   background: #ffffff;
+}
+
+.containImgDesc {
+  /* -webkit-box-shadow: 5px 5px 5px 0px rgba(171, 171, 171, 1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(171, 171, 171, 1);
+  box-shadow: 5px 5px 5px 0px rgba(171, 171, 171, 1); */
+}
+
+.titleOffer,
+.priceOffer {
+  margin-top: 0px;
+  padding: 10px;
+}
+
+.userContainer {
+  flex: 1;
+}
+
+.imgAvatar {
+}
+
+.userContainContainer {
+  background-color: #ffffff;
+  height: 100px;
+  border: 1px solid #d6d0d0;
+  flex: 1;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* -webkit-box-shadow: 5px 5px 5px 0px rgba(171, 171, 171, 1);
+  -moz-box-shadow: 5px 5px 5px 0px rgba(171, 171, 171, 1);
+  box-shadow: 5px 5px 5px 0px rgba(171, 171, 171, 1); */
+}
+
+.txtContainer {
+  display: flex;
 }
